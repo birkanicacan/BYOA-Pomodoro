@@ -1,0 +1,133 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #fafafa;
+    color: #111827;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: clamp(1.5rem, 5vw, 2.5rem);
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 
+                0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+    width: min(90vw, 360px);
+    min-width: auto;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 5vw, 1.875rem);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    letter-spacing: -0.025em;
+}
+
+.timer {
+    font-size: clamp(3rem, 15vw, 5rem);
+    font-weight: 600;
+    margin: 2rem 0;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.05em;
+    color: #111827;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.controls button, .mode button {
+    font-size: clamp(0.75rem, 2.5vw, 0.875rem);
+    margin: 0.25rem;
+    padding: clamp(0.5rem, 2vw, 0.625rem) clamp(0.75rem, 3vw, 1.25rem);
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background-color: #f3f4f6;
+    color: #374151;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+#startPause {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+}
+
+#startPause:hover {
+    background-color: #1d4ed8;
+}
+
+#startPause.running {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+
+#startPause.running:hover {
+    background-color: #fecaca;
+}
+
+#reset {
+    background-color: #f3f4f6;
+    color: #374151;
+}
+
+#reset:hover {
+    background-color: #e5e7eb;
+}
+
+#modeToggle.work-mode {
+    background-color: #059669;
+    color: white;
+}
+
+#modeToggle.work-mode:hover {
+    background-color: #047857;
+}
+
+#modeToggle.break-mode {
+    background-color: #3b82f6;
+    color: white;
+}
+
+#modeToggle.break-mode:hover {
+    background-color: #2563eb;
+}
+
+.controls, .mode {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.separator {
+    margin: 0 0.1em;
+    position: relative;
+    top: -0.1em;
+}
+
+.quote-container {
+    margin: 1.5rem 0;
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote {
+    font-size: 0.875rem;
+    color: #6b7280;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 80%;
+} 
